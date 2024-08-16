@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>RightRow_Button</name>
+   <tag></tag>
+   <elementGuidId>1b642da9-653b-46a1-bef1-ded700490fd4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.dcg-keypad-btn.dcg-btn-dark-on-gray.dcg-hovered</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='main']/div/div/div/div[3]/div/div[2]/div[13]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:label=&quot;Right Arrow&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>3818069d-85b1-4c95-a26a-46d6c62673c1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>427769bc-c73d-4ba6-9028-f5686e99d5fd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dcg-keypad-btn dcg-btn-dark-on-gray dcg-hovered</value>
+      <webElementGuid>c4c8aba9-e043-45c8-8e2a-fe3c6e58e50e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>dcg-command</name>
+      <type>Main</type>
+      <value>right</value>
+      <webElementGuid>2b467865-bdc8-4d00-8197-ec44843b04d6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-label</name>
+      <type>Main</type>
+      <value>Right Arrow</value>
+      <webElementGuid>3afa7411-f513-47a1-9789-27a7f730732e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;main&quot;)/div[@class=&quot;dcg-matrix-api-container-v1_10&quot;]/div[@class=&quot;dcg-calc-matrix-main-wrapper dcg-container dcg-tap-container touchtracking_id_1 dcg-hovered&quot;]/div[@class=&quot;dcg-calc-matrix-main dcg-hovered&quot;]/div[@class=&quot;dcg-basic-keypad-container dcg-hovered&quot;]/div[@class=&quot;dcg-basic-keypad dcg-do-not-blur dcg-hovered&quot;]/div[@class=&quot;dcg-keypad-row dcg-hovered&quot;]/div[@class=&quot;dcg-keypad-btn-container dcg-hovered&quot;]/span[@class=&quot;dcg-keypad-btn dcg-btn-dark-on-gray dcg-hovered&quot;]</value>
+      <webElementGuid>e6c33064-0672-4aeb-885e-045e655c7f76</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='main']/div/div/div/div[3]/div/div[2]/div[13]/span</value>
+      <webElementGuid>7865d8da-72f4-4c75-b054-d2327821c4c9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='×'])[1]/following::span[3]</value>
+      <webElementGuid>ac26a136-b9b9-43b5-9ce7-922194d625b6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='times'])[1]/following::span[5]</value>
+      <webElementGuid>da81d561-220c-4b43-973e-ad4052d66155</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='positive'])[1]/preceding::span[17]</value>
+      <webElementGuid>f81f5ee2-eaef-4635-89a5-283a4f50266b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='+'])[1]/preceding::span[18]</value>
+      <webElementGuid>8de30395-1c12-47d4-af3a-ce8d7123dcfd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[13]/span</value>
+      <webElementGuid>886b5cef-33b1-429f-8e31-7b6a4caf57fd</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

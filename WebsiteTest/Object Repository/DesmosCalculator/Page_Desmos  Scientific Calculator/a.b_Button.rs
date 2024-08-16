@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a.b_Button</name>
+   <tag></tag>
+   <elementGuidId>e5c8021a-9b7b-4f81-902e-a6122e523700</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.dcg-keypad-btn.dcg-btn-light-on-gray.dcg-hovered</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='main']/div/div/div/div[3]/div[2]/div/div/div/div[11]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:label=&quot;A over B&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>477c03e7-fd28-4528-952a-ed587f21a1db</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>c75e02d3-0e28-4461-9097-6b719280d23b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dcg-keypad-btn dcg-btn-light-on-gray dcg-hovered</value>
+      <webElementGuid>fdf78452-f68b-4c4f-85b0-54272097cbfc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>dcg-command</name>
+      <type>Main</type>
+      <value>a/b</value>
+      <webElementGuid>aaa66f04-86a7-41e8-a336-2416f43170c1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-label</name>
+      <type>Main</type>
+      <value>A over B</value>
+      <webElementGuid>09e6fd8e-ce14-4840-8b24-135a4f3b49ad</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>StartFraction, &quot;a&quot; Over &quot;b&quot; , EndFractionab​</value>
+      <webElementGuid>125065fe-5e0c-453b-9005-cb6801038eaa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;main&quot;)/div[@class=&quot;dcg-calculator-api-container-v1_10&quot;]/div[@class=&quot;dcg-calc-basic-main-wrapper dcg-scientific-calculator dcg-container dcg-tap-container touchtracking_id_1 dcg-hovered&quot;]/div[@class=&quot;dcg-calc-basic-main dcg-hovered&quot;]/div[@class=&quot;dcg-hovered&quot;]/div[@class=&quot;dcg-basic-keypad-container dcg-hovered&quot;]/div[@class=&quot;dcg-hovered&quot;]/div[@class=&quot;dcg-basic-keypad dcg-do-not-blur dcg-hovered&quot;]/div[@class=&quot;dcg-keypad-row dcg-hovered&quot;]/div[@class=&quot;dcg-keypad-btn-container dcg-hovered&quot;]/span[@class=&quot;dcg-keypad-btn dcg-btn-light-on-gray dcg-hovered&quot;]</value>
+      <webElementGuid>3b46ef0c-5818-453c-bd66-6e0e61083a21</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='main']/div/div/div/div[3]/div[2]/div/div/div/div[11]/span</value>
+      <webElementGuid>5778e5da-1c85-4d20-a16c-36c10e6dacde</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='%'])[2]/following::span[1]</value>
+      <webElementGuid>b142435d-3396-433a-8d47-3939ce10fcf7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='%'])[1]/following::span[3]</value>
+      <webElementGuid>fc5e44d1-a73e-4573-8824-9e87c30614c4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[11]/span</value>
+      <webElementGuid>4d6cb45c-b9ee-44e9-b3ef-cb71f01cddfe</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'StartFraction, &quot;a&quot; Over &quot;b&quot; , EndFractionab​' or . = 'StartFraction, &quot;a&quot; Over &quot;b&quot; , EndFractionab​')]</value>
+      <webElementGuid>7e2de103-e3f7-437b-b5c8-2ac9c2abd1a5</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

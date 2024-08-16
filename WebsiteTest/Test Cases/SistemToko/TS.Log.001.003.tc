@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User login with invalid credential</description>
+   <name>TS.Log.001.003</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bdbc28fa-3a75-4755-b8f5-1e2446f98fe3</testCaseGuid>
+</TestCaseEntity>

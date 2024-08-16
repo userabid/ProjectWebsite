@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>user didn't receive an email</description>
+   <name>TS.Log.002.002</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>23b920ca-e449-40fa-b445-569f52487870</testCaseGuid>
+</TestCaseEntity>

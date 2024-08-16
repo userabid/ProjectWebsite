@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>user can receive email to update password</description>
+   <name>TS.Log.002.001</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>af14fb3b-a18f-434b-b899-47faa69fbd32</testCaseGuid>
+</TestCaseEntity>
