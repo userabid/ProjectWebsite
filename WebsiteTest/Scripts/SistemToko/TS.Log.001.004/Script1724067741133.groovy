@@ -23,27 +23,23 @@ WebUI.maximizeWindow()
 
 WebUI.navigateToUrl('https://sistemtoko.com/')
 
+WebUI.takeScreenshot()
+
 WebUI.switchToWindowIndex(0)
 
-WebUI.click(findTestObject('SistemToko/Page_Dashboard/button_register'))
+WebUI.click(findTestObject('SistemToko/Page_Dashboard/Login_Button'))
 
-WebUI.setText(findTestObject('SistemToko/Page_Register/input_Email'), 'sporwins@naverly.com')
+WebUI.setText(findTestObject('SistemToko/Page_Login/input_Email'), 'wrongemail@gmail.com')
 
-WebUI.setEncryptedText(findTestObject('SistemToko/Page_Register/input_Password'), 'RigbBhfdqODKcAsiUrg+1Q==')
+WebUI.setEncryptedText(findTestObject('SistemToko/Page_Login/input_Password'), 'RyzK/uu8Q1+7/zuOsKmZ+g==')
 
-WebUI.setEncryptedText(findTestObject('SistemToko/Page_Register/input_Re-enterPassword'), 'RigbBhfdqODKcAsiUrg+1Q==')
+WebUI.click(findTestObject('SistemToko/Page_Login/button_Login'))
 
-WebUI.setText(findTestObject('SistemToko/Page_Register/input_FullName'), 'Try This Website')
+WebUI.getText(findTestObject('SistemToko/Page_Login/AlertMessageFalse'))
 
-WebUI.setText(findTestObject('SistemToko/Page_Register/input_Phone'), '08123456789')
+String verify = WebUI.getText(findTestObject('SistemToko/Page_Login/AlertMessageFalse'))
 
-WebUI.click(findTestObject('SistemToko/Page_Register/button_Register'))
-
-WebUI.getText(findTestObject('SistemToko/Page_Register/AlertMessageRegist'))
-
-String verify = WebUI.getText(findTestObject('SistemToko/Page_Register/AlertMessageRegist'))
-
-WebUI.verifyElementText(findTestObject('SistemToko/Page_Register/AlertMessageRegist'), verify)
+WebUI.verifyElementText(findTestObject('SistemToko/Page_Login/AlertMessageFalse'), verify)
 
 if (verify == 'Operation Failed') {
     WebUI.takeScreenshot()

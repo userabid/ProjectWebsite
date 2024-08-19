@@ -19,15 +19,35 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
+WebUI.maximizeWindow()
+
 WebUI.navigateToUrl('https://sistemtoko.com/')
 
-WebUI.click(findTestObject('Object Repository/SistemToko/Page_sistemtoko.com, Aplikasi Termudah untu_65d0a2/Login_Button'))
+WebUI.takeScreenshot()
 
-WebUI.setText(findTestObject('Object Repository/SistemToko/Page_Login  sistemtoko.com/input_Email'), 'welpegssktok@gmail.com')
+WebUI.switchToWindowIndex(0)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/SistemToko/Page_Login  sistemtoko.com/input_Password'), 'RyzK/uu8Q1+7/zuOsKmZ+g==')
+WebUI.click(findTestObject('SistemToko/Page_Dashboard/Login_Button'))
 
-WebUI.click(findTestObject('Object Repository/SistemToko/Page_Login  sistemtoko.com/button_Login'))
+WebUI.setText(findTestObject('SistemToko/Page_Login/input_Email'), 'welpegssktok@gmail.com')
 
-WebUI.getText(findTestObject('SistemToko/Page_Login  sistemtoko.com/AlertMessageFalse'))
+WebUI.setEncryptedText(findTestObject('SistemToko/Page_Login/input_Password'), 'RyzK/uu8Q1+7/zuOsKmZ+g==')
+
+WebUI.click(findTestObject('SistemToko/Page_Login/button_Login'))
+
+WebUI.getText(findTestObject('SistemToko/Page_Login/AlertMessageFalse'))
+
+String verify = WebUI.getText(findTestObject('SistemToko/Page_Login/AlertMessageFalse'))
+
+WebUI.verifyElementText(findTestObject('SistemToko/Page_Login/AlertMessageFalse'), verify)
+
+if (verify == 'Operation Failed') {
+    WebUI.takeScreenshot()
+
+    println(verify)
+}
+
+WebUI.takeScreenshot()
+
+WebUI.closeBrowser()
 

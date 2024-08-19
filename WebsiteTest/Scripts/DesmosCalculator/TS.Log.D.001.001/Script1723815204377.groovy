@@ -19,31 +19,47 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
+WebUI.maximizeWindow()
+
 WebUI.navigateToUrl('https://www.desmos.com/')
 
-WebUI.click(findTestObject('Object Repository/DesmosCalculator/Page_Desmos  Beautiful free math/CalculatorScientific'))
+WebUI.click(findTestObject('DesmosCalculator/Page_Desmos  Beautiful free math/CalculatorScientific'))
 
-WebUI.click(findTestObject('Object Repository/DesmosCalculator/Page_Desmos  Scientific Calculator/a.b_Button'))
+WebUI.click(findTestObject('Object Repository/DesmosCalculator/PageScientificCalculator/a.b_Button'))
 
-WebUI.click(findTestObject('Object Repository/DesmosCalculator/Page_Desmos  Scientific Calculator/Number2_Button'))
+WebUI.click(findTestObject('Object Repository/DesmosCalculator/PageScientificCalculator/Number2_Button'))
 
-WebUI.click(findTestObject('Object Repository/DesmosCalculator/Page_Desmos  Scientific Calculator/Enter_Button'))
+WebUI.click(findTestObject('DesmosCalculator/Page_Desmos  Scientific Calculator/RightRow_Button'))
 
-WebUI.click(findTestObject('Object Repository/DesmosCalculator/Page_Desmos  Scientific Calculator/Number4_Button'))
+WebUI.click(findTestObject('Object Repository/DesmosCalculator/PageScientificCalculator/Number4_Button'))
 
-WebUI.click(findTestObject('Object Repository/DesmosCalculator/Page_Desmos  Scientific Calculator/Enter_Button'))
+WebUI.click(findTestObject('DesmosCalculator/Page_Desmos  Scientific Calculator/RightRow_Button'))
 
-WebUI.click(findTestObject('Object Repository/DesmosCalculator/Page_Desmos  Scientific Calculator/times_Button'))
+WebUI.click(findTestObject('Object Repository/DesmosCalculator/PageScientificCalculator/times_Button'))
 
-WebUI.click(findTestObject('Object Repository/DesmosCalculator/Page_Desmos  Scientific Calculator/a.b_Button'))
+WebUI.click(findTestObject('Object Repository/DesmosCalculator/PageScientificCalculator/a.b_Button'))
 
-WebUI.click(findTestObject('Object Repository/DesmosCalculator/Page_Desmos  Scientific Calculator/Number5_Button'))
+WebUI.click(findTestObject('Object Repository/DesmosCalculator/PageScientificCalculator/Number5_Button'))
 
-WebUI.click(findTestObject('Object Repository/DesmosCalculator/Page_Desmos  Scientific Calculator/Enter_Button'))
+WebUI.click(findTestObject('DesmosCalculator/Page_Desmos  Scientific Calculator/RightRow_Button'))
 
-WebUI.click(findTestObject('Object Repository/DesmosCalculator/Page_Desmos  Scientific Calculator/Number3_Button'))
+WebUI.click(findTestObject('Object Repository/DesmosCalculator/PageScientificCalculator/Number3_Button'))
 
-WebUI.click(findTestObject('Object Repository/DesmosCalculator/Page_Desmos  Scientific Calculator/Enter_Button'))
+WebUI.click(findTestObject('Object Repository/DesmosCalculator/PageScientificCalculator/Enter_Button'))
 
-WebUI.getText(findTestObject('Object Repository/DesmosCalculator/Page_Desmos  Scientific Calculator/HasilPerhitungan'))
+WebUI.getText(findTestObject('Object Repository/DesmosCalculator/PageScientificCalculator/HasilPerhitungan'))
+
+String verify = WebUI.getText(findTestObject('DesmosCalculator/Page_Desmos  Scientific Calculator/HasilPerhitungan'))
+
+WebUI.verifyElementText(findTestObject('DesmosCalculator/Page_Desmos  Scientific Calculator/HasilPerhitungan'), verify)
+
+if (verify == 'equals 0.8 3 3 3 3 3 3 3 3 3') {
+    WebUI.takeScreenshot()
+
+    println(verify)
+}
+
+WebUI.takeScreenshot()
+
+WebUI.closeBrowser()
 

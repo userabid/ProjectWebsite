@@ -19,33 +19,49 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
+WebUI.maximizeWindow()
+
 WebUI.navigateToUrl('https://www.desmos.com/')
 
-WebUI.click(findTestObject('Object Repository/DesmosCalculator/Page_Desmos  Beautiful free math/CalculatorScientific'))
+WebUI.click(findTestObject('DesmosCalculator/Page_Desmos  Beautiful free math/Matrix_Calculator'))
 
-WebUI.click(findTestObject('Object Repository/DesmosCalculator/Page_Desmos  Matrix Calculator/NewMatrix_button'))
+WebUI.click(findTestObject('Object Repository/DesmosCalculator/PageMatrixCalculator/NewMatrix_button'))
 
-WebUI.click(findTestObject('Object Repository/DesmosCalculator/Page_Desmos  Matrix Calculator/Number6_button'))
+WebUI.click(findTestObject('Object Repository/DesmosCalculator/PageMatrixCalculator/Number6_button'))
 
-WebUI.click(findTestObject('Object Repository/DesmosCalculator/Page_Desmos  Matrix Calculator/RightRow_Button'))
+WebUI.click(findTestObject('Object Repository/DesmosCalculator/PageMatrixCalculator/RightRow_Button'))
 
-WebUI.click(findTestObject('Object Repository/DesmosCalculator/Page_Desmos  Matrix Calculator/Number4_Button'))
+WebUI.click(findTestObject('Object Repository/DesmosCalculator/PageMatrixCalculator/Number4_Button'))
 
-WebUI.click(findTestObject('Object Repository/DesmosCalculator/Page_Desmos  Matrix Calculator/RightRow_Button'))
+WebUI.click(findTestObject('Object Repository/DesmosCalculator/PageMatrixCalculator/RightRow_Button'))
 
-WebUI.click(findTestObject('Object Repository/DesmosCalculator/Page_Desmos  Matrix Calculator/Number1_Button'))
+WebUI.click(findTestObject('Object Repository/DesmosCalculator/PageMatrixCalculator/Number1_Button'))
 
-WebUI.click(findTestObject('Object Repository/DesmosCalculator/Page_Desmos  Matrix Calculator/RightRow_Button'))
+WebUI.click(findTestObject('Object Repository/DesmosCalculator/PageMatrixCalculator/RightRow_Button'))
 
-WebUI.click(findTestObject('Object Repository/DesmosCalculator/Page_Desmos  Matrix Calculator/Number3_Button'))
+WebUI.click(findTestObject('Object Repository/DesmosCalculator/PageMatrixCalculator/Number3_Button'))
 
-WebUI.click(findTestObject('Object Repository/DesmosCalculator/Page_Desmos  Matrix Calculator/Enter_Button'))
+WebUI.click(findTestObject('Object Repository/DesmosCalculator/PageMatrixCalculator/Enter_Button'))
 
-WebUI.click(findTestObject('Object Repository/DesmosCalculator/Page_Desmos  Matrix Calculator/det_Button'))
+WebUI.click(findTestObject('Object Repository/DesmosCalculator/PageMatrixCalculator/det_Button'))
 
-WebUI.click(findTestObject('Object Repository/DesmosCalculator/Page_Desmos  Matrix Calculator/A_Button'))
+WebUI.click(findTestObject('Object Repository/DesmosCalculator/PageMatrixCalculator/A_Button'))
 
-WebUI.click(findTestObject('Object Repository/DesmosCalculator/Page_Desmos  Matrix Calculator/Enter_Button'))
+WebUI.click(findTestObject('Object Repository/DesmosCalculator/PageMatrixCalculator/Enter_Button'))
 
-WebUI.getText(findTestObject('Object Repository/DesmosCalculator/Page_Desmos  Matrix Calculator/HasilPerhitungan2'))
+WebUI.getText(findTestObject('Object Repository/DesmosCalculator/PageMatrixCalculator/HasilPerhitungan2'))
+
+String verify = WebUI.getText(findTestObject('DesmosCalculator/Page_Desmos  Matrix Calculator/HasilPerhitungan2'))
+
+WebUI.verifyElementText(findTestObject('DesmosCalculator/Page_Desmos  Matrix Calculator/HasilPerhitungan2'), verify)
+
+if (verify == 'equals 14') {
+    WebUI.takeScreenshot()
+
+    println(verify)
+}
+
+WebUI.takeScreenshot()
+
+WebUI.closeBrowser()
 

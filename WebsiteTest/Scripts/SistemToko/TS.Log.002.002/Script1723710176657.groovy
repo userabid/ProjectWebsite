@@ -19,18 +19,33 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
+WebUI.maximizeWindow()
+
 WebUI.navigateToUrl('https://sistemtoko.com/')
 
-WebUI.click(findTestObject('Object Repository/SistemToko/Page_sistemtoko.com, Aplikasi Termudah untu_65d0a2/Login_Button'))
+WebUI.switchToWindowIndex(0)
 
-WebUI.click(findTestObject('Object Repository/SistemToko/Page_Login  sistemtoko.com/LinkText_I forgot my password'))
+WebUI.click(findTestObject('SistemToko/Page_Dashboard/Login_Button'))
 
-WebUI.setText(findTestObject('Object Repository/SistemToko/Page_Password Reminder  Vendpad/input_PasswordReminder_email'), 
-    'errrorrr@gmail.com')
+WebUI.click(findTestObject('SistemToko/Page_Login/LinkText_I forgot my password'))
 
-WebUI.click(findTestObject('Object Repository/SistemToko/Page_Password Reminder  Vendpad/SendReminder_Button'))
+WebUI.setText(findTestObject('SistemToko/Page_PasswordReminder/input_PasswordReminder_email'), 'wrongemail@gmail.com')
 
-WebUI.getText(findTestObject('SistemToko/Page_Password Reminder  Vendpad/AlertMessage2'))
+WebUI.click(findTestObject('SistemToko/Page_PasswordReminder/SendReminder_Button'))
+
+WebUI.getText(findTestObject('SistemToko/Page_PasswordReminder/AlertMessage2'))
+
+String verify = WebUI.getText(findTestObject('SistemToko/Page_PasswordReminder/AlertMessage2'))
+
+WebUI.verifyElementText(findTestObject('SistemToko/Page_PasswordReminder/AlertMessage2'), verify)
+
+if (verify == 'We cant find a user with that e-mail address. !') {
+    WebUI.takeScreenshot()
+
+    println(verify)
+}
+
+WebUI.takeScreenshot()
 
 WebUI.closeBrowser()
 

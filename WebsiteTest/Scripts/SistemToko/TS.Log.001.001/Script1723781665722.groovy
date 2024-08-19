@@ -3,6 +3,7 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.google.common.base.Verify as Verify
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -19,16 +20,37 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
+WebUI.maximizeWindow()
+
 WebUI.navigateToUrl('https://sistemtoko.com/')
 
-WebUI.click(findTestObject('Object Repository/SistemToko/Page_sistemtoko.com, Aplikasi Termudah untu_65d0a2/Login_Button'))
+WebUI.takeScreenshot()
 
-WebUI.setText(findTestObject('Object Repository/SistemToko/Page_Login  sistemtoko.com/input_Email'), 'welpegssktok@gmail.com')
+WebUI.switchToWindowIndex(0)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/SistemToko/Page_Login  sistemtoko.com/input_Password'), 
-    'Kb7waiNMCgWcAVO1DmWg8w==')
+WebUI.click(findTestObject('SistemToko/Page_Dashboard/Login_Button'))
 
-WebUI.click(findTestObject('Object Repository/SistemToko/Page_Login  sistemtoko.com/button_Login'))
+WebUI.delay(3)
 
-WebUI.getText(findTestObject('Object Repository/SistemToko/Page_Login  sistemtoko.com/Alert Message True'))
+WebUI.setText(findTestObject('SistemToko/Page_Login/input_Email'), 'welpegssktok@gmail.com')
+
+WebUI.setEncryptedText(findTestObject('SistemToko/Page_Login/input_Password'), 'Kb7waiNMCgWcAVO1DmWg8w==')
+
+WebUI.click(findTestObject('SistemToko/Page_Login/button_Login'))
+
+WebUI.getText(findTestObject('SistemToko/Page_Login/Alert Message True'))
+
+String verify = WebUI.getText(findTestObject('SistemToko/Page_Login/Alert Message True'))
+
+WebUI.verifyElementText(findTestObject('SistemToko/Page_Login/Alert Message True'), verify)
+
+if (verify == 'Check Your Registered E-Mail') {
+    WebUI.takeScreenshot()
+
+    println(verify)
+}
+
+WebUI.takeScreenshot()
+
+WebUI.closeBrowser()
 
